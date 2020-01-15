@@ -1,0 +1,65 @@
+from __future__ import division
+
+while True :
+ 
+
+ print("Calculator")
+ print("Note: You can add on to a calculation only once.")
+ print("Enter number 1")
+ x = input()
+ print("Enter Operator : +, -, *, /")
+ op = raw_input()
+ print("Enter number 2")
+ y = input()
+ 
+ if op in ['+', 'plus', 'add']:
+   a = (x+y)
+   print("The answer is : ")
+   print(x+y)
+  
+ if op in ['-', 'minus', 'Minus']:
+   a = (x-y)
+   print("The answer is : ")
+   print(x-y)
+ 
+ if op in ['*', 'multplied by', 'Multiplied by', 'Multiply']:
+   a = (x*y)
+   print("The answer is : ")
+   print(x*y)
+ 
+ if op  in ['/', 'divided by', 'Divided by', 'Divided By']:
+   a = (x/y)
+   print("The answer is : ")
+   print(x/y)
+ 
+ print("Your calculation was performed.")
+
+ 
+ print("Do you want to add on to the calculation? (Y/N)")
+ ans = raw_input()
+ if ans in ['Y', 'Yes', 'yes', 'ya','y']:
+  print("Enter Operator : +, -, *, /")
+  ope = raw_input()
+  print("Enter the number")
+  z = input()
+  if ope in ['+', 'plus', 'add']:
+    print("The answer is: ")
+    print(a+z)
+      
+  if ope in ['-', 'minus', 'Minus']:
+    print("The answer is: ")
+    print(a-z)
+    a = (a-z)
+
+  if ope in ['*', 'multplied by', 'Multiplied by', 'Multiply']:
+    print("The answer is: ")
+    print(a*z)
+    a = (a*z)
+
+  if ope  in ['/', 'divided by', 'Divided by', 'Divided By']:
+    print("The answer is: ")
+    print(a/z)
+    a = (a/z)   
+ 
+
+   
